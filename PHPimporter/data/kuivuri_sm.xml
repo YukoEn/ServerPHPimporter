@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="ISO-8859-9"?>
+<!DOCTYPE xml>
+<epg actual_transport_stream_id="100" actual_original_network_id="42249">
+<network name="unknown_network_1">
+<service id="17" transport_stream_id="1" original_network_id="42249">
+    <event id="5018" start_time="16/06/02 01:00:00" duration="02:25:00" free_CA="0" running_status="0">
+        <language code="fin">
+          <short_event language="fin" name_encoding="ISO8859-9" name="Uutisikkuna" text_encoding="default" text=""/>
+        </language>
+        <parental_rating>
+          <country country="FIN" rating="0"/>
+        </parental_rating>
+    </event>
+    <event id="5050" start_time="16/06/02 03:25:00" duration="00:30:00" free_CA="0" running_status="0">
+        <content dvb="0x80" user="0x00"/>
+        <language code="fin">
+          <short_event language="fin" name_encoding="ISO8859-9" name="MOT: Nasta juttu" text_encoding="ISO8859-9" text="Rengasteollisuus tarjoaa viranomaisille omia hankkeitaan tukevia tutkimustuloksia. Kitkaton yhteistyö vauhdittaa satojen miljoonien arvoista nastabisnest�. Toimittajana Kirsi Sk�n."/>
+        </language>
+        <language code="swe">
+          <short_event language="swe" name_encoding="ISO8859-9" name="MOT: Historien om dubbd�cken" text_encoding="ISO8859-9" text="D�ckindustrin f�rser myndigheterna med forskningsresultat som st�der d�ckindustrins egna projekt. Det friktionsfria samarbetet ger fart �t dubbd�cksaff�rerna som handlar om hundratals miljoner. Redakt�r Kirsi Sk�n."/>
+        </language>
+        <parental_rating>
+          <country country="FIN" rating="0"/>
+        </parental_rating>
+    </event>   
+</service>
+<service id="33" transport_stream_id="1" original_network_id="42249">
+    <event id="2964" start_time="16/06/02 01:00:00" duration="02:50:00" free_CA="0" running_status="0">
+        <language code="fin">
+          <short_event language="fin" name_encoding="ISO8859-9" name="Uutisikkuna" text_encoding="default" text=""/>
+        </language>
+        <parental_rating>
+          <country country="FIN" rating="0"/>
+        </parental_rating>
+    </event>
+    <event id="3058" start_time="16/06/02 03:50:00" duration="00:01:20" free_CA="0" running_status="0">
+        <content dvb="0x50" user="0x00"/>
+        <language code="fin">
+          <short_event language="fin" name_encoding="ISO8859-9" name="Pikku Kakkonen" text_encoding="ISO8859-9" text="Ohjelmaa perheen pienimmille. yle.fi/pikkukakkonen"/>
+        </language>
+        <language code="swe">
+          <short_event language="swe" name_encoding="ISO8859-9" name="Lilla Tv�an" text_encoding="ISO8859-9" text="Program f�r de minsta i familjen. yle.fi/pikkukakkonen"/>
+        </language>
+        <parental_rating>
+          <country country="FIN" rating="0"/>
+        </parental_rating>
+    </event>
+</service>
+</network>
+<network name="unknown_network_2">
+<service id="49" transport_stream_id="100" original_network_id="42249">
+    <event id="15083" start_time="16/06/02 02:30:00" duration="00:30:00" free_CA="0" running_status="0">
+        <content dvb="0x20" user="0x00"/>
+        <language code="fin">
+          <short_event language="fin" name_encoding="ISO8859-9" name="Aamus��" text_encoding="ISO8859-9" text=""/>
+        </language>
+        <parental_rating>
+          <country country="FIN" rating="0"/>
+        </parental_rating>
+    </event>
+    <event id="15084" start_time="16/06/02 03:00:00" duration="00:25:00" free_CA="0" running_status="0">
+        <content dvb="0x20" user="0x00"/>
+        <language code="fin">
+          <short_event language="fin" name_encoding="ISO8859-9" name="Studio55.fi" text_encoding="ISO8859-9" text="Kokemuksella: Pentti Araj�rvi"/>
+        </language>
+        <parental_rating>
+          <country country="FIN" rating="0"/>
+        </parental_rating>
+    </event>
+</service>
+<service id="65" transport_stream_id="100" original_network_id="42249">
+    <event id="10641" start_time="16/06/02 02:00:00" duration="01:00:00" free_CA="0" running_status="0">
+        <content dvb="0xB0" user="0x00"/>
+        <language code="fin">
+          <short_event language="fin" name_encoding="ISO8859-9" name="Ennustaja-TV" text_encoding="default" text=""/>
+        </language>
+        <language code="swe">
+          <short_event language="swe" name_encoding="ISO8859-9" name="Ennustaja-TV" text_encoding="default" text=""/>
+        </language>
+        <parental_rating>
+          <country country="FIN" rating="0"/>
+        </parental_rating>
+    </event>
+    <event id="10642" start_time="16/06/02 03:00:00" duration="00:05:00" free_CA="0" running_status="0">
+        <content dvb="0x50" user="0x00"/>
+        <language code="fin">
+          <short_event language="fin" name_encoding="ISO8859-9" name="Bumba (S)" text_encoding="ISO8859-9" text="Kausi 1. Jakso 18/50. Bumba on v�rik�s lastensarja, jossa seikkaillaan sirkuksen ihmeellisess� maailmassa. Bumba on iloinen ja positiivinen klovni, joka on aina valmis hauskuuttamaan lapsia tempuillaan.                                    "/>
+        </language>
+        <language code="swe">
+          <short_event language="swe" name_encoding="ISO8859-9" name="Bumba (T)" text_encoding="ISO8859-9" text="Kausi 1. Jakso 18/50. Bumba on v�rik�s lastensarja, jossa seikkaillaan sirkuksen ihmeellisess� maailmassa. Bumba on iloinen ja positiivinen klovni, joka on aina valmis hauskuuttamaan lapsia tempuillaan.                                    "/>
+        </language>
+        <parental_rating>
+          <country country="FIN" rating="0"/>
+        </parental_rating>
+    </event>
+</service>
+</network>
+</epg>
