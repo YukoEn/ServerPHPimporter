@@ -19,6 +19,10 @@ CREATE TABLE IF NOT EXISTS `service_livetv_channel` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 ";
 
+// `duration` type changed to time
+// [original] 
+// `duration` int(11) unsigned DEFAULT NULL COMMENT 'Program duration',
+
 $table_program = "
 CREATE TABLE IF NOT EXISTS `service_livetv_program` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -26,8 +30,8 @@ CREATE TABLE IF NOT EXISTS `service_livetv_program` (
   `show_type` enum('movie','series','other') NOT NULL COMMENT 'Program show type',
   `long_title` varchar(255) NOT NULL COMMENT 'Program long title',
   `grid_title` varchar(15) DEFAULT NULL COMMENT 'Program grid title',
-  `original_title` varchar(255) DEFAULT NULL COMMENT 'Program original title',
-  `duration` int(11) unsigned DEFAULT NULL COMMENT 'Program duration',
+  `original_title` varchar(255) DEFAULT NULL COMMENT 'Program original title',  
+  `duration` time NULL DEFAULT NULL COMMENT 'Program duration',
   `iso_2_lang` varchar(2) DEFAULT NULL COMMENT 'Program language',
   `eidr_id` varchar(50) DEFAULT NULL COMMENT 'Program Entertainment Identifier Registry',
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -39,14 +43,21 @@ CREATE TABLE IF NOT EXISTS `service_livetv_program` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 ";
 
+// `run_time` type changed to time
+// `start_time` and `end_time` type changed to timestamp
+// [original]
+// `run_time` int(11) unsigned DEFAULT NULL COMMENT 'Schedule duration/run time',
+// `start_time` int(11) unsigned NOT NULL COMMENT 'Schedule start time',
+// `end_time` int(11) unsigned NOT NULL COMMENT 'Schedule end time',
+
 $table_schedule = "
 CREATE TABLE IF NOT EXISTS `service_livetv_schedule` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `ext_schedule_id` bigint(20) unsigned NOT NULL COMMENT 'Metadata provider schedule id',
   `channel_id` int(11) NOT NULL COMMENT 'Channel source/channel id',
-  `start_time` int(11) unsigned NOT NULL COMMENT 'Schedule start time',
-  `end_time` int(11) unsigned NOT NULL COMMENT 'Schedule end time',
-  `run_time` int(11) unsigned DEFAULT NULL COMMENT 'Schedule duration/run time',
+  `start_time` timestamp NOT NULL COMMENT 'Schedule start time',
+  `end_time` timestamp NOT NULL COMMENT 'Schedule end time',
+  `run_time` time NULL DEFAULT NULL COMMENT 'Schedule duration/run time',
   `program_id` int(11) NOT NULL COMMENT 'Schedule program id',
   `is_live` tinyint(1) DEFAULT NULL COMMENT 'Is schedule a live broadcast',
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -68,7 +79,7 @@ foreach($tables as $item => $sql){
     $query = $mysqli->query($sql);
     
     if($query) {
-        echo "<br>Table " . $item . " created successfully";
+        //echo "<br>Table " . $item . " created successfully";
     } else {
         echo "<br>Error creating table " . $item . ": " . $mysqli->error;
     }
